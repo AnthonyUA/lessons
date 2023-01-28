@@ -1,0 +1,30 @@
+@import url(reset.css);
+
+.links {
+   color: blue;
+}
+h1,
+h2 {
+   color: red;
+}
+span {
+   color: rgb(160, 160, 4);
+}
+#h2_3 {
+   color: blueviolet;
+}
+.last * {
+   color: rgb(143, 90, 194);
+}
+p.text {
+   color: grey;
+}
+.second p {
+   color: coral;
+}
+.third .fourth {
+   color: brown;
+}
+.fifth > span {
+   color: rgb(148, 212, 35);
+}
