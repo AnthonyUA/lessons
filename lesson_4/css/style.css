@@ -1,0 +1,84 @@
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Philosopher:regular&display=swap);
+
+@font-face {
+   font-family: "a_CampusGrav";
+   src: url(../fonts/ACampusGrav.woff2) format("woff2"),
+       url(../fonts/ACampusGrav.woff) format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Bodoni";
+   src: url(../fonts/BodoniCyrillic.woff2) format("woff2"),
+       url(../fonts/BodoniCyrillic.woff) format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+body {
+   background-color: rgb(143, 176, 185);
+   font-family: "Bodoni", sans-serif;
+   font-size: 19px;
+   font-weight: 500;
+   font-style: normal;
+   color: rgb(0, 0, 0);
+   line-height: 1.4;
+}
+
+h1 {
+   font-family: "a_CampusGrav";
+   font-size: 28px;
+   line-height: 3;
+   text-shadow: 0px 0px 20px rgb(8, 1, 97);
+   text-align: center;
+   font-style: normal;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+h2 {
+   font-family: "Comfortaa", arial;
+   font-size: 20px;
+   line-height: 3;
+   text-align: center;
+   font-style: normal;
+   font-weight: 900;
+   text-shadow: 0px 0px 20px rgb(8, 1, 97);
+}
+
+h3 {
+   text-indent: 20px;
+   text-shadow: 0px 0px 25px rgb(8, 1, 97);
+}
+
+.image {
+   text-align: center;
+}
+
+p {
+   text-indent: 20px;
+}
+
+.underline {
+   text-decoration: underline;
+}
+
+.navlinks {
+   color: rgb(5, 5, 175);
+   text-indent: 20px;
+   font-family: 'Philosopher', sans-serif;
+}
+
+.italic {
+   font-style: italic;
+}
+
+.footer {
+   text-align: center;
+   color: rgb(14, 14, 158);
+}
