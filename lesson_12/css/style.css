@@ -1,0 +1,390 @@
+@import url(reset.css);
+
+body {
+   background: rgb(38,38,38);
+   background: linear-gradient(0deg, rgba(38,38,38,1) 0%, rgba(149,149,149,1) 24%, rgba(109,139,124,1) 24%, rgba(15,116,67,1) 33%, rgba(212,212,212,1) 34%, rgba(157,194,194,1) 100%);
+}
+.wrapper__container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.wrapper__content {
+   perspective-origin: center;
+	perspective: 400px;
+}
+.content__translate2d {
+   width: 80px;
+   height: 80px;
+   padding-top: 30px;
+   text-align: center;
+   background-color: #888888;
+   position: absolute;
+   box-shadow: 2px 2px 10px black;
+   top: 70px;
+   left: 0px;
+}
+.content__translate2d:hover {
+   transform: translate(20px,20px);
+   transition: all 0.8s;
+}
+.content__scale2d {
+   width: 80px;
+   height: 80px;
+   padding-top: 30px;
+   text-align: center;
+   background-color: #888888;
+   position: absolute;
+   box-shadow: 2px 2px 10px black;
+   top: 70px;
+   left: 140px;
+}
+.content__scale2d:hover {
+   transform: scale(2);
+   transition: all 0.8s;
+}
+.content__rotate2d {
+   width: 80px;
+   height: 80px;
+   padding-top: 30px;
+   text-align: center;
+   background-color: #888888;
+   position: absolute;
+   box-shadow: 2px 2px 10px black;
+   top: 70px;
+   left: 280px;
+}
+.content__rotate2d:hover {
+   transform: rotate(45deg);
+   transition: all 0.8s;
+}
+.content__skew2d {
+   width: 80px;
+   height: 80px;
+   padding-top: 30px;
+   text-align: center;
+   background-color: #888888;
+   position: absolute;
+   box-shadow: 2px 2px 10px black;
+   top: 70px;
+   left: 420px;
+}
+.content__skew2d:hover {
+   transform: skew(-25deg);
+   transition: all 0.8s;
+}
+.content__multi2d {
+   width: 80px;
+   height: 80px;
+   padding-top: 30px;
+   text-align: center;
+   background-color: #888888;
+   position: absolute;
+   box-shadow: 2px 2px 10px black;
+   top: 70px;
+   left: 560px;
+}
+.content__multi2d:hover {
+   transform: translate(20px,20px) scale(1.5) rotate(-25deg);
+   transition: all 0.8s;
+}
+.content__origin2D {
+   width: 80px;
+   height: 80px;
+   padding-top: 30px;
+   text-align: center;
+   background-color: #888888;
+   position: absolute;
+   box-shadow: 2px 2px 10px black;
+   top: 70px;
+   left: 700px;
+   transform-origin: 0px 0px;
+}
+.content__origin2D:hover {
+   transform: rotate(-45deg);
+   transition: all 0.8s;
+}
+.content__translate3d {
+   width: 80px;
+   height: 80px;
+   padding-top: 30px;
+   text-align: center;
+   background-color: #888888;
+   position: absolute;
+   box-shadow: 2px 2px 10px black;
+   top: 210px;
+   left: 0px;
+}
+.content__translate3d:hover {
+   transform: translate3d(10px,10px,20px);
+   transition: all 0.8s;
+}
+.content__scale3d {
+   width: 80px;
+   height: 80px;
+   padding-top: 30px;
+   text-align: center;
+   background-color: #888888;
+   position: absolute;
+   box-shadow: 2px 2px 10px black;
+   top: 210px;
+   left: 140px;
+}
+.content__scale3d:hover {
+   transform: scale3d(2, 2, 2);
+   transition: all 0.8s;
+}
+.content__rotate3d {
+   width: 80px;
+   height: 80px;
+   padding-top: 30px;
+   text-align: center;
+   background-color: #888888;
+   position: absolute;
+   box-shadow: 2px 2px 10px black;
+   top: 210px;
+   left: 280px;
+}
+.content__rotate3d:hover {
+   transform: rotate3d(1, 1, 1, 45deg);
+   transition: all 0.8s;
+}
+.content__perspective {
+   width: 80px;
+   height: 80px;
+   padding-top: 30px;
+   text-align: center;
+   background-color: #888888;
+   position: absolute;
+   box-shadow: 2px 2px 10px black;
+   top: 210px;
+   left: 420px;
+}
+.content__perspective:hover {
+   transform: rotateX(50deg);
+   transition: all 0.8s;
+}
+.content__multi3d {
+   width: 80px;
+   height: 80px;
+   padding-top: 30px;
+   text-align: center;
+   background-color: #888888;
+   position: absolute;
+   box-shadow: 2px 2px 10px black;
+   top: 210px;
+   left: 560px;
+}
+.content__multi3d:hover {
+   transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 20deg);
+   transition: all 0.8s;
+}
+.flip {
+	perspective: 500px;
+	transform-style: preserve-3d;
+}
+.flip__body {
+	position: absolute;
+   top: 210px;
+   left: 700px;
+	width: 80px;
+	height: 80px;
+   box-shadow: 2px 2px 10px black;
+	transition: all 0.8s;
+	transform-style: preserve-3d;
+}
+.flip__front,
+.flip__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flip__front {
+	z-index: 2;
+	transform: rotateY(0deg);
+   background-color: #888888;
+	backface-visibility: hidden;
+}
+.flip__back {
+	transform: rotateY(-180deg);
+	background-color: rgba(121, 79, 69, 0.5);
+}
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}
+/* ----------------------------------  CAR  ------------------------------------------- */
+.car {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.weel-1 {
+   width: 114px;
+   height: 114px;
+   border-radius: 50%;
+   background-color: rgb(43, 43, 43);
+   position: absolute;
+   right: 743px;
+   bottom: 140px;
+   z-index: 2;
+}
+.weel-2 {
+   width: 114px;
+   height: 114px;
+   border-radius: 50%;
+   background-color: rgb(43, 43, 43);
+   position: absolute;
+   right: 249px;
+   bottom: 140px;
+   z-index: 2;
+}
+.front {
+   width: 240px;
+   height: 140px;
+   border-radius: 100% 0% 100% 0% / 60% 100% 0% 50%;
+   border-bottom-left-radius: 10% 50%;
+   background: linear-gradient(0deg, rgb(83, 87, 89) 0%, rgb(236, 0, 0) 100%);
+   position: absolute;
+   right: 680px;
+   bottom: 170px;
+}
+.rear {
+   width: 240px;
+   height: 140px;
+   border-radius: 92% 8% 100% 0% / 0% 130% 50% 100%;
+   background: linear-gradient(0deg, rgb(83, 87, 89) 0%, rgb(236, 0, 0) 100%);
+   position: absolute;
+   right: 130px;
+   bottom: 170px;
+}
+.middle {
+   width: 310px;
+   height: 140px;
+   background: linear-gradient(0deg, rgb(83, 87, 89) 0%, rgb(236, 0, 0) 100%);
+   position: absolute;
+   right: 370px;
+   bottom: 170px;
+}
+.arch-1 {
+   width: 130px;
+   height: 90px;
+   border-top-left-radius: 1000px;
+   border-top-right-radius: 1000px;
+   background-color: rgb(0, 0, 0);
+   position: absolute;
+   right: 735px;
+   bottom: 170px;
+}
+.arch-2 {
+   width: 130px;
+   height: 90px;
+   border-top-left-radius: 1000px;
+   border-top-right-radius: 1000px;
+   background-color: rgb(0, 0, 0);
+   position: absolute;
+   right: 241px;
+   bottom: 170px;
+}
+.disk-1 {
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background: rgb(202,209,209);background: radial-gradient(circle, rgb(255, 255, 255) 2%, rgb(118, 118, 118) 22%, rgb(179, 179, 178) 37%, rgb(113, 113, 113) 100%);
+   position: absolute;
+   right: 761px;
+   bottom: 157px;
+   z-index: 2;
+}
+.disk-2 {
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background: rgb(202,209,209);
+   background: radial-gradient(circle, rgb(255, 255, 255) 2%, rgb(118, 118, 118) 22%, rgb(179, 179, 178) 37%, rgb(113, 113, 113) 100%);
+   position: absolute;
+   right: 266px;
+   bottom: 157px;
+   z-index: 2;
+}
+.front-roof {
+   border-top: 50px solid transparent;
+   border-right: 120px solid rgb(236, 0, 0);
+   border-bottom: 0px solid transparent;
+   position: absolute;
+   right: 559px;
+   bottom: 317px;
+   transform: scale(1.3);
+}
+.rear-roof {
+   border-top: 50px solid transparent;
+   border-left: 200px solid rgb(236, 0, 0);
+   border-bottom: 0px solid transparent;
+   position: absolute;
+   right: 170px;
+   bottom: 317px;
+   transform: scale(1.3);
+}
+.middle-roof {
+   width: 143px;
+   height: 66px;
+   background-color: rgb(236, 0, 0);
+   position: absolute;
+   right: 399px;
+   bottom: 308px;
+}
+.glass-rear {
+   border-top: 50px solid transparent;
+   border-left: 120px solid rgb(52, 68, 70);
+   border-bottom: 0px solid transparent;
+   position: absolute;
+   right: 281px;
+   bottom: 310px;
+}
+.glass-front {
+   border-top: 50px solid transparent;
+   border-right: 120px solid rgb(52, 68, 70);
+   border-bottom: 0px solid transparent;
+   position: absolute;
+   right: 540px;
+   bottom: 310px;
+}
+.glass-middle {
+   width: 140px;
+   height: 50px;
+   background-color: rgb(52, 68, 70);
+   position: absolute;
+   right: 400px;
+   bottom: 310px;
+}
+.front-light {
+   width: 48px;
+   height: 22px;
+   border: 1px solid rgba(189, 186, 186, 0.597);
+   border-radius: 10% 60% 84% 10% / 24% 15% 85% 76% ;
+   background: linear-gradient(112deg, rgb(255, 255, 255) 9%, rgba(134,139,142,1) 72%);
+   position: absolute;
+   right: 852px;
+   bottom: 242px;
+}
+.rear-light {
+   width: 60px;
+   height: 25px;
+   border: 1px solid rgba(85, 84, 84, 0.597);
+   border-radius: 92% 8% 21% 79% / 24% 100% 0% 76%;
+   background: linear-gradient(112deg, rgb(116, 22, 22) 11%, rgba(236,0,86,1) 89%);
+   position: absolute;
+   right: 138px;
+   bottom: 272px;
+}
+.skew-bar {
+   width: 20px;
+   height: 66px;
+   background-color: rgb(236, 0, 0);
+   position: absolute;
+   right: 460px;
+   bottom: 308px;
+   transform: skew(-20deg);
+}
