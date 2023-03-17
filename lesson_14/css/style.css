@@ -4,6 +4,9 @@
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
+	font-size: 12px;
+	line-height: 1.6;
+	color: #495057;
 }
 .wrapper {
 	overflow: clip;
@@ -49,12 +52,7 @@ body {
 .image__button:hover {
 	transform: scale(1.1);
 }
-.card__date {
-	font-size: 12px;
-	line-height: 1.6;
-	color: #495057;
-}
-.card__date:hover {
+.date__link:hover {
 	text-decoration: underline;
 	transition: all 0.3s;
 }
@@ -62,23 +60,16 @@ body {
 	font-weight: 700;
 	font-size: 25px;
 	line-height: 1.6;
+	color: #212529;
 }
-.card__title:hover {
-	color: rgb(80, 98, 158);
+.title__link:hover {
+	color: rgb(5, 38, 146);
 	transition: all 0.3s;
 }
 .card__text {
-	font-size: 12px;
-	line-height: 1.6;
-	color: #495057;
 	flex-grow: 1;
 }
-.card__author {
-	font-size: 12px;
-	line-height: 1.6;
-	color: #495057;
-}
-.card__author:hover {
+.author__link:hover {
 	text-decoration: underline;
 	transition: all 0.3s;
 }
