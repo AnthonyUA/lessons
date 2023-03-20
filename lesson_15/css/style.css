@@ -1,0 +1,151 @@
+@import url(reset.css);
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
+   line-height: 1.6;
+   font-weight: 400;
+   color: #9C9C9C;
+}
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+.wrapper__container {
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 112px 15px 100px 15px;
+}
+.header__title {
+   font-size: 56px;
+   font-weight: 700;
+   line-height: 1.4;
+   max-width: 490px;
+   margin: 0 auto;
+   margin-bottom: 40px;
+   color: rgb(0, 0, 0);
+}
+.header__text {
+   max-width: 520px;
+   margin: 0 auto;
+   margin-bottom: 53px;
+   text-align: center;
+   color: rgb(0, 0, 0);
+}
+.header__banner img {
+   max-width: 100%;
+   margin-bottom: 100px;
+}
+.page__portfolio {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   row-gap: 32px;
+   margin-bottom: 100px;
+}
+.portfolio__project {
+   max-width: 584px;
+}
+.project__title {
+   margin-bottom: 24px;
+}
+.project__text p {
+   margin-bottom: 60px;
+}
+.project__date {
+   display: inline-block;
+   margin-right: 80px;
+}
+.project__category {
+   display: inline-block;
+}
+.date__link:hover,
+.category__link:hover {
+   text-decoration: underline;
+}
+.portfolio__design {
+   max-width: 584px;
+}
+.design__title {
+   margin-bottom: 24px;
+}
+.interior {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   row-gap: 32px;
+}
+.interior__link {
+   overflow: hidden;
+}
+.interior img {
+   max-width: 100%;
+}
+.interior img:hover {
+   transform: scale(1.05);
+   transition: 0.8s;
+}
+.page__services {
+   display: flex;
+   flex-direction: column;
+   row-gap: 40px;
+}
+.services__title {
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.5;
+   color: rgb(0, 0, 0);
+}
+.services__title::after {
+   content: "";
+   display: inline-block;
+   width: 464px;
+   height: 2px;
+   margin-left: 26px;
+   vertical-align: middle;
+   background-color: rgb(0, 0, 0);
+}
+.services__design,
+.services__consultant,
+.services__construction {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+.image-design__link,
+.image-consultant__link,
+.image-construction__link {
+   display: inline-block;
+   overflow: hidden;
+}
+.design__image img,
+.consultant__image img,
+.construction__image img {
+   max-width: 100%;
+}
+.design__image img:hover,
+.consultant__image img:hover,
+.construction__image img:hover {
+   transform: scale(1.05);
+   transition: 0.8s;
+} 
+.design__description,
+.consultant__description,
+.construction__description {
+   flex: 0 1 334px;
+}
+.description-design__title,
+.description-consultant__title,
+.description-construction__title {
+   margin-bottom: 20px;
+   display: inline-block;
+}
+.description-design__title:hover,
+.description-consultant__title:hover,
+.description-construction__title:hover {
+   text-decoration: underline;
+}
